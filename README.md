@@ -7,8 +7,8 @@ sudo apt-get install ngspice
 
 ```
 ## File Format 
-We recommend the following file format .Divide the netlist description into parameter section ,circuit section ,
-and simulation command section .
+We recommend the following file format .Divide the netlist description into **parameter** section ,**circuit** section ,
+and **simulation command** section .
 ``` 
 First line should be name and roll no and ckt description.
 **comments begin with astericks
@@ -49,7 +49,7 @@ This will load your circuit in ngspice.You can also start ngspice and source the
 
 ## DEVICES 
 Here's a brief reference of the SPICE devices and statements.<br /> 
-Parameters enclosed by braces { } are required, while, those in brackets [ ] are optional.<br /> 
+**Parameters enclosed by braces { } are required**, while, **those in brackets [ ] are optional**.<br /> 
 Parameters followed by an asterisk { }* should be repeated as necessary <br />
 
 ```
@@ -141,4 +141,12 @@ Parameters followed by an asterisk { }* should be repeated as necessary <br />
 	.TRAN {print step value} {final time} [{start_time_for_save}]  
 	Examples: 
 	.TRAN 5NS 100NS
-``` 
+```
+## SOME OTHER USEFUL COMMANDS 
+```
+setplot : This allows us to select the simulation results which were simulated after start of program.
+print   : This prints the vector of interest 
+display : This allows us to view the names of different vectors available for plot and print 
+help    : Perhaps the most important command ,Deprecated for Windows but supports Linux Distros.
+
+```
