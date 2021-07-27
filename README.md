@@ -32,25 +32,26 @@ First line should be name and roll no and ckt description.
 ```
 $ ngspice yourCircuit.cir 
 ```
+This will load your circuit in ngspice.You can also start ngspice and source the file in it . 
 
 ## DEVICES 
-Here's a brief reference of the SPICE devices and statements. Parameters enclosed by braces { } are 
-required, while, those in brackets [ ] are optional. Parameters followed by an asterisk { }* should 
-be repeated as necessary 
+Here's a brief reference of the SPICE devices and statements.<br /> 
+Parameters enclosed by braces { } are required, while, those in brackets [ ] are optional.<br /> 
+Parameters followed by an asterisk { }* should be repeated as necessary <br />
 
 ```
-1. .C device - Capacitor. 
+1. C device - Capacitor. 
 	C{name} {+node} {-node} [{model}] {value} [IC={initial}] 
 	Examples: 
 	CLOAD  15  0  20pF
 	CFDBK   3 33  CMOD 10pF IC=1.5v 
 
-2. .D device - Diode. 
+2. D device - Diode. 
 	D{name} {+node} {-node} {model}  [area]
 	Examples: 
 	DCLAMP  14  0  DMOD 
 
-3. .I device - Current Source. 
+3. I device - Current Source. 
 	I{name} {+node} {-node} [[DC] {value}] [AC {mag} [{phase}]]
 	Examples: 
 	IBIAS  13  0  2.3mA 
@@ -58,19 +59,19 @@ be repeated as necessary
 	IPULSE 1   0  PULSE(-1mA 1mA 2ns 2ns 2ns 50ns 100ns) 
 	I3    26  77  AC 1 SIN(.002 .002 1.5MEG)
 
-4. .L device - Inductor.  
+4. L device - Inductor.  
 	L{name} {+node} {-node} [model] {value} [IC={initial}]  
 	Examples: 
 	LLOAD  15  0   20mH 
 	L2      1  2   .2e-6 
 	LSENSE  5 12   2uH IC=2mA
 
-5. .R device - Resistor.  
+5. R device - Resistor.  
 	R{name}  {+node} {-node} [{model}] {value}  
 	Examples: 
 	RLOAD  15  0  2k 
 
-6. .V device - Voltage Source.  
+6. V device - Voltage Source.  
 	V{name} {+node} {-node} [[DC] {value}] [AC {mag} [{phase}]] 
 	Examples: 
 	VBIAS  13  0  2.3mV 
@@ -78,7 +79,7 @@ be repeated as necessary
 	VPULSE 1   0 PULSE(-1mV 1mV 2ns 2ns 2ns 50ns 100ns) 
 	V3    26  77  AC 1 SIN(.002 .002 1.5MEG)
 
-7. .X device - Subcircuit Call.  
+7. X device - Subcircuit Call.  
 	X{name} [{node}]* {subcircuit name} 
 	Examples: 
 	X12  100 101  200 201  DIFFAMP 
