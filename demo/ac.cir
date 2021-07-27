@@ -1,0 +1,20 @@
+Sarvesh 1930790--
+
+**parameter 
+.temp 27 
+
+**input 
+vin 1 0 dc 0v ac 1v
+
+
+**circuit 
+r1 1 2 1k
+r2 2 0 1k 
+r3 2 3 1k 
+r4 3 0 1k
+c1 3 0 1uF 
+
+**command 
+.ac dec 10 1 100k 
+
+.end 

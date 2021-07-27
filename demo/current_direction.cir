@@ -1,0 +1,6 @@
+current direction in voltage sources 
+v1 1 0 dc 3v
+r1 1 2 1k 
+v2 2 0 dc 2v 
+.op
+.end 

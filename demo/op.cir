@@ -1,0 +1,21 @@
+First line should be your name and roll_no what circuit is doing
+**This is a comment in ngspice 
+**Comments are used to keep seperate segments 
+
+**parameter 
+.temp 27
+
+**input 
+vin 1 0 dc 1v 
+
+**circuit 
+r1 1 2 1k
+r2 2 0 1k 
+r3 2 3 1k
+r4 3 0 1k 
+
+**command 
+.op
+
+.end
+
