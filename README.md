@@ -1,6 +1,6 @@
-#NGSPICE SIMULATION HELP 
+# NGSPICE SIMULATION HELP 
 
-##INSTALLATION 
+## INSTALLATION 
 1.On Debian like distros execute following 
 ```
 sudo apt-get install ngspice 
@@ -26,7 +26,7 @@ First line should be name and roll no and ckt description.
 .end 
 ```
 
-##USAGE 
+## USAGE 
 1.
 ```
 $ ngspice yourCircuit.cir 
@@ -121,5 +121,4 @@ be repeated as necessary
 	.TRAN {print step value} {final time} [{start_time_for_save}]  
 	Examples: 
 	.TRAN 5NS 100NS
-
-6. 
+ 
