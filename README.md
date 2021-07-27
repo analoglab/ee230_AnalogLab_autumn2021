@@ -7,7 +7,8 @@ sudo apt-get install ngspice
 
 ```
 ## File Format 
-We recommend the following file format .
+We recommend the following file format .Divide the netlist description into parameter section ,circuit section ,
+and simulation command section .
 ``` 
 First line should be name and roll no and ckt description.
 **comments begin with astericks
@@ -27,7 +28,7 @@ First line should be name and roll no and ckt description.
 ```
 
 ## USAGE 
-1.
+
 ```
 $ ngspice yourCircuit.cir 
 ```
@@ -37,6 +38,7 @@ Here's a brief reference of the SPICE devices and statements. Parameters enclose
 required, while, those in brackets [ ] are optional. Parameters followed by an asterisk { }* should 
 be repeated as necessary 
 
+```
 1. .C device - Capacitor. 
 	C{name} {+node} {-node} [{model}] {value} [IC={initial}] 
 	Examples: 
@@ -80,9 +82,11 @@ be repeated as necessary
 	X{name} [{node}]* {subcircuit name} 
 	Examples: 
 	X12  100 101  200 201  DIFFAMP 
+```
 
 ## INPUT SOURCES 
 
+```
 1. .PULSE
 	PULSE( {v1} {v2} {tdelay} {trise} {tfall} {width} {period} 
 
@@ -91,9 +95,11 @@ be repeated as necessary
 
 3. .SINE WAVE
 	SIN( {voffset} {vpeak} {freq} {tdelay} {damp_factor} {phase} )
+```
 
 ## STATEMENTS 
 
+```
 1. .AC - AC Analysis.  
 	.AC [LIN][OCT][DEC] {points} {start} {end}  
 	Examples: 
@@ -121,4 +127,4 @@ be repeated as necessary
 	.TRAN {print step value} {final time} [{start_time_for_save}]  
 	Examples: 
 	.TRAN 5NS 100NS
- 
+``` 
