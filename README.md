@@ -151,6 +151,7 @@ Parameters followed by an asterisk { }* should be repeated as necessary <br />
 You can execute the following commands on ngspice prompt .
 
 ```
+listing : This Displays the netlist of the circuit currently loaded into ngspice .
 setplot : This allows us to select the simulation results which were simulated after start of program.
 print   : This prints the vector of interest 
 display : This allows us to view the names of different vectors available for plot and print 
@@ -160,4 +161,5 @@ hardcopy [filename.ps] [vectors] : allows you to save the vectors in filename.ps
 shell [command] : You can execute shell commands in ngspice prompt!!. 
          ngspice 1 ->shell clear                   This will clear your screen
 source [filename.cir] : Prepares ngspice to execute filename.cir 
+
 ```
