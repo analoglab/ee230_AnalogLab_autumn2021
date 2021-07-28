@@ -1,0 +1,34 @@
+Name 19----/19d----,resistive transient analysis
+
+**parameter 
+.temp 27 
+
+**input 
+vin 1 0 sin(0 1 1k)
+
+
+**circuit 
+r1 1 2 1k
+r2 2 0 1k 
+r3 2 3 1k 
+r4 3 0 1k
+
+**command 
+.control
+
+set color0=white
+set color1=red
+set color2=blue
+
+tran 0.1m 1m 
+plot v(3)
+hardcopy output_transient2.ps v(2,3) 
+.endc
+.end 
+
+**color0 is bg colour 
+**color1 is txt and grid color 
+**color2 to color15 are colours of vectors plotted
+
+
+
