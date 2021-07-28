@@ -155,9 +155,9 @@ setplot : This allows us to select the simulation results which were simulated a
 print   : This prints the vector of interest 
 display : This allows us to view the names of different vectors available for plot and print 
 help    : Perhaps the most important command ,Deprecated for Windows but supports Linux Distros.
-hardcopy [filename.ps] [vectors] : allows you to save the vectors in filename.ps .The extention is postscript. Example<br />
-	ngspice 1 ->hardcopy output.ps v(1) v(2) <br /> This will plot v(1) and v(2) in output.ps
-shell [command] : You can execute shell commands in ngspice prompt!!. Example <br />
-		ngspice 1 ->shell clear , This will clear your screen<br />
-source [filename.cir] : Prepares ngspice to execute filename.cir .
+hardcopy [filename.ps] [vectors] : allows you to save the vectors in filename.ps 
+	 ngspice 1 ->hardcopy output.ps v(1) v(2)  This will plot v(1) and v(2) in output.ps
+shell [command] : You can execute shell commands in ngspice prompt!!. 
+         ngspice 1 ->shell clear                   This will clear your screen
+source [filename.cir] : Prepares ngspice to execute filename.cir 
 ```
