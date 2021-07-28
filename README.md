@@ -157,9 +157,9 @@ print   : This prints the vector of interest
 display : This allows us to view the names of different vectors available for plot and print 
 help    : Perhaps the most important command ,Deprecated for Windows but supports Linux Distros.
 hardcopy [filename.ps] [vectors] : allows you to save the vectors in filename.ps 
-	 ngspice 1 ->hardcopy output.ps v(1) v(2)  This will plot v(1) and v(2) in output.ps
+	 ngspice 1 -> hardcopy output.ps v(1) v(2)  This will plot v(1) and v(2) in output.ps
 shell [command] : You can execute shell commands in ngspice prompt!!. 
-         ngspice 1 ->shell clear                   This will clear your screen
+         ngspice 1 -> shell clear                   This will clear your screen
 source [filename.cir] : Prepares ngspice to execute filename.cir 
 
 ```
