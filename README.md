@@ -1,12 +1,15 @@
 # NGSPICE SIMULATION HELP 
 
 ## INSTALLATION 
-1.On Debian like distros execute following 
+
+1. On Debian like distros(eg. Ubuntu) execute following 
+
 ```
 sudo apt-get install ngspice 
 
 ```
 ## File Format 
+
 We recommend the following file format .Divide the netlist description into **parameter** section ,**circuit** section ,
 and **simulation command** section .
 ``` 
@@ -48,6 +51,7 @@ This will load your circuit in ngspice.You can also start ngspice and source the
 | F      | E-15     | Femto    |
 
 ## DEVICES 
+
 Here's a brief reference of the SPICE devices and statements.<br /> 
 **Parameters enclosed by braces { } are required**, while, **those in brackets [ ] are optional**.<br /> 
 Parameters followed by an asterisk { }* should be repeated as necessary <br />
@@ -143,10 +147,17 @@ Parameters followed by an asterisk { }* should be repeated as necessary <br />
 	.TRAN 5NS 100NS
 ```
 ## SOME OTHER USEFUL COMMANDS 
+
+You can execute the following commands on ngspice prompt .
+
 ```
 setplot : This allows us to select the simulation results which were simulated after start of program.
 print   : This prints the vector of interest 
 display : This allows us to view the names of different vectors available for plot and print 
 help    : Perhaps the most important command ,Deprecated for Windows but supports Linux Distros.
-
+hardcopy [filename.ps] [vectors] : allows you to save the vectors in filename.ps .The extention is postscript. Example<br />
+	ngspice 1 ->hardcopy output.ps v(1) v(2) <br /> This will plot v(1) and v(2) in output.ps
+shell [command] : You can execute shell commands in ngspice prompt!!. Example <br />
+		ngspice 1 ->shell clear , This will clear your screen<br />
+source [filename.cir] : Prepares ngspice to execute filename.cir .
 ```

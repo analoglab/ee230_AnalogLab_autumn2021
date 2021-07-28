@@ -1,6 +1,6 @@
 First line should be your name and roll_no what circuit is doing
 **This is a comment in ngspice 
-**Comments are used to keep seperate segments 
+**Comments are used to make netlists more readable 
 
 **parameter 
 .temp 27
