@@ -1,6 +1,6 @@
 ## Install using .deb package Linux
 
-Download the .deb package ,execute the followinf line .<br />
+Download the .deb package ,Open terminal in folder where the package got downloaded ,execute the followinf line .<br />
 
 ```
 $ sudo dpkg -i ngspice_27-1_amd64.deb
