@@ -1,4 +1,12 @@
-## Install for Linux 
+## Install using .deb package Linux
+
+Download the .deb package ,execute the followinf line .<br />
+
+```
+$ sudo dpkg -i ngspice_27-1_amd64.deb
+```
+
+## Install for Linux using .tar.gz
 
 Download and Extract the tar.gz ,inside that there is a script install <br />
 This script contains the commands to install ngspice <br />
